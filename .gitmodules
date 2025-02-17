@@ -1,0 +1,9 @@
+[submodule "themes/typo-plus"]
+	path = themes/typo-plus
+	url = git@github.com:OleMussmann/typo-plus.git
+[submodule "themes/hugo-notice"]
+	path = themes/hugo-notice
+	url = https://github.com/martignoni/hugo-notice.git
+[submodule "themes/typo"]
+	path = themes/typo
+	url = git@github.com:tomfran/typo.git
