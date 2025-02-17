@@ -1,3 +1,175 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ole.mn/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ole.mn'
+theme = ['hugo-notice', 'typo-plus', 'typo']
+enableEmoji = true
+enableRobotsTXT = false
+minify = true
+newContentEditor = "nvim"
+
+# Syntax highlight on code blocks
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark]
+duplicateResourceFiles = false
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+linkifyProtocol = 'https'
+strikethrough = false
+table = true
+taskList = true
+
+[markup.goldmark.extensions.cjk]
+eastAsianLineBreaks = false
+eastAsianLineBreaksStyle = 'simple'
+enable = false
+escapedSpace = false
+
+[markup.goldmark.extensions.extras]
+
+[markup.goldmark.extensions.extras.delete]
+enable = true
+
+[markup.goldmark.extensions.extras.insert]
+enable = true
+
+[markup.goldmark.extensions.extras.mark]
+enable = false
+
+[markup.goldmark.extensions.extras.subscript]
+enable = true
+
+[markup.goldmark.extensions.extras.superscript]
+enable = true
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+
+[markup.goldmark.extensions.typographer]
+apostrophe = '&rsquo;'
+disable = false
+ellipsis = '&hellip;'
+emDash = '&mdash;'
+enDash = '&ndash;'
+leftAngleQuote = '&laquo;'
+leftDoubleQuote = '&ldquo;'
+leftSingleQuote = '&lsquo;'
+rightAngleQuote = '&raquo;'
+rightDoubleQuote = '&rdquo;'
+rightSingleQuote = '&rsquo;'
+
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = 'github'
+wrapStandAloneImageWithinParagraph = true
+
+[markup.goldmark.parser.attribute]
+block = false
+title = true
+
+[markup.goldmark.renderHooks]
+
+[markup.goldmark.renderHooks.image]
+enableDefault = false
+
+[markup.goldmark.renderHooks.link]
+enableDefault = false
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = false
+xhtml = false
+
+[markup.highlight]
+noclasses = false
+
+[params]
+# Meta description
+description = "A tech blog - adventures in coding, cybersecurity and design"
+# Appearance settings
+theme = 'auto'
+colorPalette = "iceberg"
+mermaidTheme = "forest"
+mermaidDarkTheme = "dark"
+hideHeader = false
+# Footer
+showFooter = false
+footerContent = ""
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+I am Ole: codeslinger, physicist and technology geek with an eye for design and patterns. Research Software Engineer at the [Netherlands eScience Center](https://www.esciencecenter.nl/), usually hunting for some problem to solve. Currently enjoying [NixOS](https://nixos.org/), [Python](https://www.python.org/), [Rust](https://www.rust-lang.org/) and cybersecurity.
+
+## Highlighted Projects
+* [`nps`](https://github.com/OleMussmann/nps) - The better [`nix`](https://nixos.org/) package search
+"""
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+# Lists parameters
+paginationSize = 50
+listSummaries = true
+listDateFormat = '2006-01-02'
+singleDateFormat = '2006-01-02'
+# Breadcrumbs
+breadcrumbs = false
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "projects"
+url = "/projects"
+
+[[params.menu]]
+name = "slides"
+url = "/slides"
+
+[[params.menu]]
+name = "colophon"
+url = "/colophon"
+
+[[params.menu]]
+name = "rss"
+url = "/index.xml"
+
+# Social icons
+[[params.social]]
+name = "mastodon"
+url = "https://fosstodon.org/@ole"
+
+[[params.social]]
+name = "bluesky"
+url = "https://bsky.app/profile/ole.mn"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/OleMussmann"
+
+[[params.social]]
+name = "gitlab"
+url = "https://gitlab.com/OleMussmann"
+
+[[params.social]]
+name = "rss"
+url = "index.xml"
+
+[taxonomies]
+tag = 'tags'
+
+[security.exec]
+allow = ["^nvim$"]
