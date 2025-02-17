@@ -9,6 +9,7 @@
     in {
       devShells.default = pkgs.mkShell rec {
         packages = with pkgs; [
+          exiftool
           hugo
         ];
       };
