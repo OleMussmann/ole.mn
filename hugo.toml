@@ -177,3 +177,80 @@ tag = 'tags'
 
 [security.exec]
 allow = ["^nvim$"]
+
+##############################################################
+# ! Server config is for testing with `hugo server` _only_ ! #
+# ! Set those in your server config later !                  #
+##############################################################
+[server]
+  [[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Access-Control-Allow-Origin = '*'
+      Content-Security-Policy = """
+        default-src 'none';
+        font-src 'self' https://cdn.jsdelivr.net/npm/katex/dist/fonts/;
+        img-src 'self' https:;
+
+        style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css;
+        script-src-elem localhost:1313/livereload.js localhost:1313/js/theme-switch.js localhost:1313/js/copy-code.js localhost:1313/js/mermaid.js localhost:1313/js/math.js https://cdn.jsdelivr.net/npm/katex/dist/ https://cdn.jsdelivr.net/npm/mermaid/dist/;
+        script-src-attr 'self';
+        connect-src ws://localhost:1313/livereload;
+
+        upgrade-insecure-requests;
+        base-uri 'none';
+        manifest-src 'none'
+      """
+      Cross-Origin-Embedder-Policy = 'credentialless'
+      Cross-Origin-Opener-Policy = 'same-origin'
+      Cross-Origin-Resource-Policy = 'same-site'
+      Permissions-Policy = """
+        accelerometer=(),
+        ambient-light-sensor=(),
+        autoplay=(),
+        battery=(),
+        camera=(),
+        cross-origin-isolated=(),
+        display-capture=(),
+        document-domain=(),
+        encrypted-media=(),
+        execution-while-not-rendered=(),
+        execution-while-out-of-viewport=(),
+        fullscreen=(),
+        geolocation=(),
+        gyroscope=(),
+        keyboard-map=(),
+        magnetometer=(),
+        microphone=(),
+        midi=(),
+        navigation-override=(),
+        payment=(),
+        picture-in-picture=(),
+        publickey-credentials-get=(),
+        screen-wake-lock=(),
+        sync-xhr=(),
+        usb=(),
+        web-share=(),
+        xr-spatial-tracking=(),
+        clipboard-read=(),
+        clipboard-write=(),
+        gamepad=(),
+        speaker-selection=(),
+        conversion-measurement=(),
+        focus-without-user-activation=(),
+        hid=(),
+        idle-detection=(),
+        interest-cohort=(),
+        serial=(),
+        sync-script=(),
+        trust-token-redemption=(),
+        unload=(),
+        window-placement=(),
+        vertical-scroll=()
+      """
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      Strict-Transport-Security = 'max-age=31536000; includeSubDomains'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-Permitted-Cross-Domain-Policies = 'none'
+      X-XSS-Protection = '1; mode=block'
