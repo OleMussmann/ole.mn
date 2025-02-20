@@ -1,6 +1,6 @@
 baseURL = 'https://ole.mn/'
 languageCode = 'en-us'
-title = 'ole.mn'
+title = 'ole.mn - Adventures in coding, cybersecurity and design'  # ~50-60 chars
 theme = ['hugo-notice', 'typo-plus', 'typo']
 enableEmoji = true
 enableRobotsTXT = false
@@ -95,8 +95,9 @@ xhtml = false
 noclasses = false
 
 [params]
+header = 'ole.mn'
 # Meta description
-description = "A tech blog - adventures in coding, cybersecurity and design"
+description = "Musings abount interesting tech problems, enriched by occasional guest posts. May you find some interesting nuggets of knowledge here."  # ~120 chars
 # Appearance settings
 theme = 'auto'
 colorPalette = "iceberg"
