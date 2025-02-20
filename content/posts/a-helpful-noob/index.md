@@ -3,6 +3,8 @@ date = '2024-09-10T11:00:00+01:00'
 title = 'A Helpful Noob'
 summary = "Open Source Intelligence of Malware"
 description = "Analyzing malware posted in a GitHub thread"
+author = ["Ole", "https://github.com/OleMussmann"]
+issueLink = "https://github.com/OleMussmann/ole.mn/issues"
 tags = ["cybersecurity", "malware", "GitHub"]
 draft = false
 
@@ -14,6 +16,9 @@ showTags = true
 hideBackToTop = false
 hidePagination = true
 fediverse = "@ole@fosstodon.org"
+
+[sitemap]
+disable = false
 +++
 
 ![Street art, a graffiti of Sherlock with a magnifying glass](header.jpg#eager "A suspicious message in GitHub is the beginning of this detective story")

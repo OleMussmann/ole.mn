@@ -3,7 +3,9 @@ date = '2025-02-02T18:38:56+01:00'
 title = 'Markdown Showcase'
 summary = "What markdown features work in this theme?"
 description = "Testing theme features by listing many markdown options"
-tags = ["markdown", "hugo", "blog"]
+author = ["Ole", "https://github.com/OleMussmann"]
+issueLink = "https://github.com/OleMussmann/ole.mn/issues"
+tags = ["markdown", "goldmark", "hugo", "blog"]
 draft = false
 
 toc = false
@@ -14,6 +16,9 @@ showTags = false
 hideBackToTop = false
 hidePagination = true
 fediverse = "@ole@fosstodon.org"
+
+[sitemap]
+disable = false
 +++
 
 ## Themes
