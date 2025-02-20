@@ -7,6 +7,9 @@ enableRobotsTXT = false
 minify = true
 newContentEditor = "nvim"
 
+[sitemap]
+  changefreq = "monthly"
+
 # Syntax highlight on code blocks
 [markup]
 defaultMarkdownHandler = 'goldmark'
