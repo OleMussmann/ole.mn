@@ -31,7 +31,23 @@ produce certain features?
 
 This is mainly a reference for my future self. Feel free to browse and maybe
 learn a thing or two. Keep in mind: not everything listed here will work for
-your theme, and there might be features that yours have that are not covered here.
+your theme, and there might be features of yours that are not covered here.
+
+------
+
+## Summaries
+
+```
+{{</* details summary="I'm a summary, click me!" */>}}
+Oh hi! Details here.
+{{</* /details */>}}
+```
+
+{{< details summary="I'm a summary, click me!" >}}
+Oh hi! Details here.
+{{< /details >}}
+
+------
 
 ## Math
 
