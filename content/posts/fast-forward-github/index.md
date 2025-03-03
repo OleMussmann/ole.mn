@@ -230,3 +230,7 @@ It works. Yet it feels dirty. You just made a forbidden deal with ~~Cthulhu~~ Oc
 By now you not only know what fast-forward merging is, you also have ways to use it on your external repository on [github.com](https://github.com). You might have subscribed to [github.com/orgs/community/discussions/4618](https://github.com/orgs/community/discussions/4618) and now patiently wait for the powers-that-be to enable this feature on their website.
 
 Until that happens, feel free to choose one of the workarounds outlined above.
+
+{{< flourish >}}
+
+Cross post: » [medium.com](https://medium.com/@ole-mn/fast-forward-merges-on-github-752f900f45e8) » [blog.esciencecenter.nl](https://blog.esciencecenter.nl/fast-forward-merges-on-github-752f900f45e8)
