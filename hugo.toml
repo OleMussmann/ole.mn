@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'ole.mn - Adventures in coding, cybersecurity and design'  # ~50-60 chars
 theme = ['hugo-notice', 'typo-plus', 'typo']
 enableEmoji = true
-enableRobotsTXT = false
+enableRobotsTXT = true
 minify = true
 newContentEditor = "nvim"
 
@@ -125,6 +125,8 @@ listDateFormat = '2006-01-02'
 singleDateFormat = '2006-01-02'
 # Breadcrumbs
 breadcrumbs = false
+# Add a fake page disallowed by robots.txt
+honeypot = true
 
 # Main menu pages
 [[params.menu]]
