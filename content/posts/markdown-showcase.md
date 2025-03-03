@@ -55,6 +55,30 @@ KL(\hat{y}||\frac{y+\hat{y}}{2}))
 \end{aligned}
 \]
 
+------
+
+## Flourish Dividers
+
+```
+{{</* flourish 1 */>}}
+{{</* flourish 2 */>}}
+...
+{{</* flourish 10 */>}}
+```
+
+{{< flourish 1 >}}
+{{< flourish 2 >}}
+{{< flourish 3 >}}
+{{< flourish 4 >}}
+{{< flourish 5 >}}
+{{< flourish 6 >}}
+{{< flourish 7 >}}
+{{< flourish 8 >}}
+{{< flourish 9 >}}
+{{< flourish 10 >}}
+
+------
+
 ## Manicules
 ```
 {{</* manicule right */>}} Attention! {{</* manicule left */>}}
@@ -67,6 +91,8 @@ than the footnote down there {{</* manicule down */>}}.
 
 The header up here {{< manicule up >}} is larger
 than the footnote down there {{< manicule down >}}.
+
+------
 
 ## Notice Boxes
 
