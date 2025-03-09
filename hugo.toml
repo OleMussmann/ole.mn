@@ -104,6 +104,9 @@ colorPalette = "iceberg"
 mermaidTheme = "forest"
 mermaidDarkTheme = "dark"
 hideHeader = false
+readTime = true
+showTags = true
+hidePagination = true
 # Footer
 showFooter = false
 footerContent = ""
