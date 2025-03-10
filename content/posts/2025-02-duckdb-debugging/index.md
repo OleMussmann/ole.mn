@@ -1,11 +1,11 @@
 ---
 date: 2025-02-15
-title: "A debugging journey into the unknown"
+title: "A Debugging Journey into the Unknown"
 summary: "We go through the steps I had to go through to debug a build problem with DuckDB, and in the process learn some concepts and techniques."
 description: "An account of debugging a subtle build problem with DuckDB"
 tags: ["Windows", "DLL", "DuckDB", "MingW", "cross-compilation", "git-bisect", "Julia", "BinaryBuilder"]
 author: ["Suvayu Ali", "https://github.com/suvayu"]
-issueLink = "https://github.com/suvayu/suvayu/issues"
+issueLink: "https://github.com/suvayu/suvayu/issues"
 ---
 
 ![Among the Stars; Credit: NASA/JPL-Caltech](./pia17049-hires-cropped.jpg "Among the Stars; an artist's concept of Voyager in deep space")
@@ -55,7 +55,7 @@ function duckdb_vector_size()
 end
 ```
 
-TThe variable `idx_t` above is defined in `ctypes.jl` as:
+The variable `idx_t` above is defined in `ctypes.jl` as:
 
 ```julia
 const idx_t = UInt64 # DuckDB index type
@@ -143,7 +143,7 @@ correctly, we should check if they are indeed exported.  After some
 searching, I learnt Windows development tools includes the program
 `dumpbin.exe` that can show the exported symbol names.
 
-<details><summary>Exported symbols for the working version of <code>libduckdb.dll</code></summary>
+{{< details summary="Exported symbols for the working version of `libduckdb.dll`" >}}
 
 ```pwsh
 > dumpbin.exe /EXPORTS .\bin\libduckdb.dll
@@ -525,9 +525,9 @@ File Type: DLL
         1000 .tls
       17E000 .xdata
 ```
-</details>
+{{< /details >}}
 
-<details><summary>Exported symbols for a faulty version of <code>libduckdb.dll</code></summary>
+{{< details summary="Exported symbols for a faulty version of `libduckdb.dll`" >}}
 
 ```pwsh
 > dumpbin.exe /EXPORTS .\bin\libduckdb.dll
@@ -654,7 +654,7 @@ File Type: DLL
         1000 .tls
       197000 .xdata
 ```
-</details>
+{{< /details >}}
 
 So it is confirmed that the symbol export is not working for the
 faulty version.  However we still do not know which commit introduced
@@ -767,7 +767,7 @@ and used a wide variety of tools to investigate.
 
 To summarise, the issue is:
 1. All releases of `DuckDB.jl` after `v1.0.0` on Windows are broken.
-2. We recreate the issue without Julia, which shows the the DuckDB
+2. We recreate the issue without Julia, which shows the DuckDB
    build using the MingW-w64 toolchain is broken for all releases
    after `v1.0.0`.
 
