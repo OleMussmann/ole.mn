@@ -1,3 +1,11 @@
+- term: ADHD
+  alias: Attention-Deficit/Hyperactivity Disorder
+  definition: A (somewhat mis-labelled) difference in brain function that creates challenges directing ones attention.
+  category: neurodiversity
+  readmore: https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder
+- term: ADD
+  alias: Attention Deficit Disorder
+  see: ADHD
 - term: Allistic
   definition: Allistic means "not autistic"
   category: neurodiversity
@@ -16,4 +24,3 @@
   definition: Neurodiverse describes a group of people whose brains work differently from one another
   category: neurodiversity
   readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
-
