@@ -1,0 +1,27 @@
+- term: ADHD
+  alias: Attention-Deficit/Hyperactivity Disorder
+  definition: A (somewhat mis-labelled) difference in brain function that creates challenges directing ones attention.
+  category: neurodiversity
+  readmore: https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder
+- term: ADD
+  alias: Attention Deficit Disorder
+  see: ADHD
+- term: Allistic
+  definition: Allistic means "not autistic"
+  category: neurodiversity
+  readmore: https://autisticphd.com/theblog/what-is-allistic-is-it-neurotypical/
+- term: Neurotypical
+  alias: NT
+  definition: Neurotypical (NT) means "not neurodivergent"
+  category: neurodiversity
+  readmore: https://www.verywellhealth.com/neurotypical-11713902
+- term: Neurodivergent
+  alias: ND
+  definition: Neurodivergent (ND) describes an individual whose working of their brain deviates from some (not very well defined) "normal" baseline
+  category: neurodiversity
+  readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
+- term: Neurodiverse
+  definition: Neurodiverse describes a group of people whose brains work differently from one another
+  category: neurodiversity
+  readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
+
