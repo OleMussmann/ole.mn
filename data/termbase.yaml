@@ -1,26 +1,114 @@
+# Neurodiversity
 - term: ADHD
   alias: Attention-Deficit/Hyperactivity Disorder
   definition: A (somewhat mis-labelled) difference in brain function that creates challenges directing ones attention.
   category: neurodiversity
   readmore: https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder
+
 - term: ADD
   alias: Attention Deficit Disorder
+  definition: An outdated term describing the "inattentive" variant of ADHD.
+  category: neurodiversity
   see: ADHD
+
 - term: Allistic
-  definition: Allistic means "not autistic"
+  definition: Allistic means "not autistic".
+  see: Autistic
   category: neurodiversity
   readmore: https://autisticphd.com/theblog/what-is-allistic-is-it-neurotypical/
-- term: Neurotypical
-  alias: NT
-  definition: Neurotypical (NT) means "not neurodivergent"
+
+- term: Autism
+  alias: Autism Spectrum Disorder (ASD)
+  definition: A neurodevelopmental disorder characterized by differences or difficulties in social communication and interaction, a preference for predictability and routine, sensory processing differences, focused interests, and repetitive behaviors.
   category: neurodiversity
-  readmore: https://www.verywellhealth.com/neurotypical-11713902
+  see: Autistic
+  readmore: https://www.mayoclinic.org/diseases-conditions/autism-spectrum-disorder/symptoms-causes/syc-20352928
+
+- term: Autistic
+  definition: A person who has autism.
+  category: neurodiversity
+  see: Autism
+  readmore: https://www.mayoclinic.org/diseases-conditions/autism-spectrum-disorder/symptoms-causes/syc-20352928
+
+- term: (C)PTSD
+  alias: Complex Post-Traumatic Stress Disorder
+  definition: Variant of post-traumatic stress disorder typically caused by ongoing abuse or stressful environment.
+  see: PTSD
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/24881-cptsd-complex-ptsd
+
+- term: Dissociative Identity Disorder
+  alias: DID
+  definition: A mental health condition characterized by the presence of two or more distinct identities or personality states that control an individual's behavior at different times.
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/9792-dissociative-identity-disorder-multiple-personality-disorder
+
+- term: Dyslexia
+  definition: A learning disability characterized by troubles with reading.
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/6005-dyslexia
+
+- term: Dysgraphia
+  definition: A neurological condition that affects writing skills, especially handwriting.
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/23294-dysgraphia
+
+- term: Dyspraxia
+  definition: A neurodevelopmental disorder characterized by impaired coordination of physical movements.
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/23963-dyspraxia-developmental-coordination-disorder-dcd
+
+- term: Neurodivergence
+  definition: Referring to a variation in people's brain functions.
+  see: Neurodivergent
+  category: neurodiversity
+  readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
+
 - term: Neurodivergent
   alias: ND
-  definition: Neurodivergent (ND) describes an individual whose working of their brain deviates from some (not very well defined) "normal" baseline
+  definition: Neurodivergent (ND) describes an individual whose working of their brain deviates from some (not very well defined) "normal" baseline; not neurotypical.
+  see: Neurotypical
   category: neurodiversity
   readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
+
 - term: Neurodiverse
-  definition: Neurodiverse describes a group of people whose brains work differently from one another
+  definition: A group having, relating to, or constituting a type of brain functioning that is not neurotypical.
   category: neurodiversity
   readmore: https://www.forbes.com/sites/ludmilapraslova/2024/10/28/neurodivergent-or-neurodiverse-inclusive-language-and-neurodiversity/
+
+- term: Neurodiversity
+  definition: The range of differences in individual brain function and behavioral traits, regarded as part of normal variation in the human population. Neurodiversity can include Autism, ADHD, ADD, Dyslexia, Dyscalculia, Dyspraxia, and many more aspects.
+  category: neurodiversity
+  readmore: https://www.verywellmind.com/what-is-neurodiversity-5193463
+
+- term: Neurotypical
+  alias: NT
+  definition: Relating to or showing typical neurological behavior and development; "not neurodivergent" or "not neurodiverse".
+  see: Neurodivergent
+  category: neurodiversity
+  readmore: https://www.verywellhealth.com/neurotypical-11713902
+
+- term: OCD
+  alias: Obsessive-Compulsive Disorder
+  definition: Obsessive-Compulsive Disorder (OCD) is a mental health condition characterized by unwanted, intrusive thoughts (obsessions) that cause anxiety, leading individuals to perform repetitive behaviors (compulsions) to alleviate that anxiety.
+  category: neurodiversity
+  readmore: https://www.mayoclinic.org/diseases-conditions/obsessive-compulsive-disorder/symptoms-causes/syc-20354432
+
+- term: PTSD
+  alias: Post-Traumatic Stress Disorder
+  definition: Post-Traumatic Stress Disorder (PTSD) is a mental health condition that can develop after experiencing or witnessing a traumatic event, such as violence, accidents, or natural disasters.
+  see: (C)PTSD
+  category: neurodiversity
+  readmore: https://www.mayoclinic.org/diseases-conditions/post-traumatic-stress-disorder/symptoms-causes/syc-20355967
+
+- term: Spectrum
+  definition: Neurological differences or disorders are said to be a "spectrum", acknowledging that they can vastly differ in severity or expression from non-existent to very strong.
+  category: neurodiversity
+  readmore: https://www.livingonthespectrum.com/education/the-spectrum-of-neurodiversity/
+
+# - term: Term
+#   alias: Term_alias
+#   definition: Definition
+#   see: other_term
+#   category: neurodiversity
+#   readmore: link
