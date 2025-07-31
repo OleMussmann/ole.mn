@@ -25,4 +25,9 @@ fediverse = "@ole@fosstodon.org"
   render = 'always'
 +++
 
+<!-- START_FOR_EBOOK
+# Glossary
+**Terms and Definitions**
+END_FOR_EBOOK -->
+
 {{< glossary "neurodiversity" >}}
