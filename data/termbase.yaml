@@ -1,4 +1,9 @@
 # Neurodiversity
+- term: Ableism
+  definition: The discrimination and social prejudice against people with disabilities, based on the belief that typical abilities are superior.
+  category: neurodiversity
+  readmore: https://www.accessliving.org/newsroom/blog/ableism-101/
+
 - term: ADHD
   alias: Attention-Deficit/Hyperactivity Disorder
   definition: A (somewhat mis-labelled) difference in brain function that creates challenges directing ones attention.
@@ -30,18 +35,23 @@
   see: Autism
   readmore: https://www.mayoclinic.org/diseases-conditions/autism-spectrum-disorder/symptoms-causes/syc-20352928
 
-- term: (C)PTSD
+- term: CPTSD
   alias: Complex Post-Traumatic Stress Disorder
   definition: Variant of post-traumatic stress disorder typically caused by ongoing abuse or stressful environment.
   see: PTSD
   category: neurodiversity
   readmore: https://my.clevelandclinic.org/health/diseases/24881-cptsd-complex-ptsd
 
-- term: Dissociative Identity Disorder
-  alias: DID
+- term: DID
+  alias: Dissociative Identity Disorder
   definition: A mental health condition characterized by the presence of two or more distinct identities or personality states that control an individual's behavior at different times.
   category: neurodiversity
   readmore: https://my.clevelandclinic.org/health/diseases/9792-dissociative-identity-disorder-multiple-personality-disorder
+
+- term: Dyscalculia
+  definition: A learning disability resulting in difficulty learning or comprehending arithmetic.
+  category: neurodiversity
+  readmore: https://my.clevelandclinic.org/health/diseases/23949-dyscalculia
 
 - term: Dyslexia
   definition: A learning disability characterized by troubles with reading.
@@ -81,12 +91,23 @@
   category: neurodiversity
   readmore: https://www.verywellmind.com/what-is-neurodiversity-5193463
 
+- term: Neurotype
+  definition: The different types of brain functions and behavioral traits, e.g. neurotypical, neurodivergent.
+  category: neurodiversity
+  readmore: https://stimpunks.org/glossary/neurotype/
+
 - term: Neurotypical
   alias: NT
   definition: Relating to or showing typical neurological behavior and development; "not neurodivergent" or "not neurodiverse".
   see: Neurodivergent
   category: neurodiversity
   readmore: https://www.verywellhealth.com/neurotypical-11713902
+
+- term: Masking
+  alias: mask
+  definition: Suppressing neurodivergent traits to fit in with societal or workplace norms.
+  category: neurodiversity
+  readmore: https://www.psychreg.org/masking-what-why-neurodivergent-people-do-it/
 
 - term: OCD
   alias: Obsessive-Compulsive Disorder
@@ -97,7 +118,7 @@
 - term: PTSD
   alias: Post-Traumatic Stress Disorder
   definition: Post-Traumatic Stress Disorder (PTSD) is a mental health condition that can develop after experiencing or witnessing a traumatic event, such as violence, accidents, or natural disasters.
-  see: (C)PTSD
+  see: CPTSD
   category: neurodiversity
   readmore: https://www.mayoclinic.org/diseases-conditions/post-traumatic-stress-disorder/symptoms-causes/syc-20355967
 
