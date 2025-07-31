@@ -11,6 +11,10 @@
         packages = with pkgs; [
           exiftool
           hugo
+
+          # ebook
+          calibre
+          python312Packages.beautifulsoup4
         ];
       };
     });
