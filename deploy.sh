@@ -8,7 +8,7 @@ echo "### remove public folder..."
 rm -r public
 
 echo "### build new blog..."
-hugo --minify
+hugo --minify --buildDrafts
 
 echo "### strip all EXIF data except ICC color profiles..."
 find public -type f -iregex ".*\.\(jpeg\|jpg\|png\|tif\|tiff\|webp\|wav\)" -print0 | xargs -0 -I {} -n1 -P$NUM_PARALLEL_JOBS bash -c 'exiftool -all= -tagsfromfile @ -icc_profile "{}"' &>/dev/null
