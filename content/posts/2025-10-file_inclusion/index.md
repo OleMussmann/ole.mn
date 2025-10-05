@@ -442,7 +442,7 @@ Welcome Guest!
 Only admins can access this page!
 ```
 
-How does the server know that we are a "Guest"? If you are now, like me, feeling a bit snacky then it's a good time to have a look at our cookie jar. Open the developer tools in your browser. You can usually summon them with `F12`. There's one cookie stored, and it looks like this.
+How does the server know that we are a "Guest"? If you are now, like me, feeling a bit snacky then it's a good time to have a look at our cookie jar. Open the developer tools in your browser. You can usually summon them with `F12`. Check out the "Storage" tab. There's one cookie stored, and it looks like this.
 
 | Name | Value | Domain | ... |
 | ---- | ----- | ------ | --- |
