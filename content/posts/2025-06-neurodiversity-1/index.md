@@ -6,7 +6,7 @@ description = "Neurodiversity at the Workplace: Part 1"
 author = ["Ole", "https://github.com/OleMussmann"]
 issueLink = "https://github.com/OleMussmann/ole.mn/issues"
 tags = ["Neurodiversity", "Autism", "ADHD", "AuDHD"]
-draft = false
+draft = true
 
 toc = true
 autonumber = false
