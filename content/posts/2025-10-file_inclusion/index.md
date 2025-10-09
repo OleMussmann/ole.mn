@@ -176,7 +176,7 @@ Let's try Path Traversal. Enter `../../THM` into the field. The request is trans
 
 ### Null Byte
 
-What's a Null Byte? Here you go: `\0`, or `%00`, depending on the encoding. It's a special set of characters that denote the end of a string in programming languages like C, or old versions of PHP. It's easier to understand with a demonstration.
+What's a Null Byte? Here you go: `\0`, or `%00`, depending on the encoding. It's a special set of characters that denote the end of a string in programming languages like C, C++, or old versions of PHP. It's easier to understand with a demonstration.
 
 Check out the online C compiler at https://www.programiz.com/c-programming/online-compiler/, paste the code below and pres **Run**, or follow along on your own system if you are familiar with compiling C code.
 
