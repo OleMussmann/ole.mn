@@ -11,7 +11,7 @@ issueLink: "https://github.com/suvayu/suvayu/issues"
 # Solving the mystery of the missing symbols!
 
 {{</* notice note */>}}
-This is a *very late* conclusion to the story I [wrote about](../2025-02-duckdb-debugging) earlier.
+This is a *very late* conclusion to the story I [wrote about]({{< relref "2025-02-duckdb-debugging" >}}) earlier.
 {{</* /notice */>}}
 
 In the earlier post, we were investigating why the MingW-w64 build of
@@ -104,11 +104,11 @@ $ nm -C libduckdb.dll | grep duckdb_vector_size
 $ winedump -j export libduckdb.dll | grep duckdb_vector_size # no match
 ```
 
-{{</* notice tip */>}}
+{{< notice tip >}}
 While not helpful on its own, the observation that symbols are not
 exported in the final linking step that creates the DLL will make
 sense later.
-{{</* /notice */>}}
+{{< /notice >}}
 
 ## A clue
 
