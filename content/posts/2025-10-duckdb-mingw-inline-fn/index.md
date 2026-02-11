@@ -10,9 +10,9 @@ issueLink: "https://github.com/suvayu/suvayu/issues"
 
 # Solving the mystery of the missing symbols!
 
-{{</* notice note */>}}
-This is a *very late* conclusion to the story I [wrote about]({{< relref "2025-02-duckdb-debugging" >}}) earlier.
-{{</* /notice */>}}
+{{< notice note >}}
+This is a *very late* conclusion to the story I [wrote about](../2025-02-duckdb-debugging) earlier.
+{{< /notice >}}
 
 In the earlier post, we were investigating why the MingW-w64 build of
 DuckDB fails to export the C-API symbols in the final DLL.  We
