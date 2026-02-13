@@ -193,15 +193,22 @@ allow = ["^nvim$"]
     [server.headers.values]
       # Disallow other sites to fetch resources
       Access-Control-Allow-Origin = 'localhost:1313'
+      X-Frame-Options = 'SAMEORIGIN'
       Content-Security-Policy = """
         default-src 'none';
+        frame-src 'self';
         font-src 'self' https://cdn.jsdelivr.net/npm/katex/dist/fonts/;
-        img-src 'self' https:;
+        img-src 'self' data: https:;
 
         style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css;
-        script-src-elem localhost:1313/livereload.js localhost:1313/js/theme-switch.js localhost:1313/js/copy-code.js localhost:1313/js/mermaid.js localhost:1313/js/math.js https://cdn.jsdelivr.net/npm/katex/dist/ https://cdn.jsdelivr.net/npm/mermaid/dist/;
+        script-src-elem localhost:1313/livereload.js localhost:1313/js/theme-switch.js localhost:1313/js/copy-code.js localhost:1313/js/mermaid.js localhost:1313/js/math.js https://cdn.jsdelivr.net/npm/katex/dist/ https://cdn.jsdelivr.net/npm/mermaid/dist/ https://cdn.bokeh.org/bokeh/release/bokeh-3.7.3.min.js 'sha256-pPykIWxJnaED+2MuvQdw7UmlTMo0F1Xlurq7GWKESSs=' 'sha256-qfumtAUSAQ5hmBRF+72Dk2vbmJxXYwSR5D21L0s4RXs=' 'sha256-MgSL0q5XFiDerhfPHgSHjy6xB0vpaQ9oGFfi0TDxSgg=' 'sha256-4fzorXEQ3dRF/aJyK7SE0ktmDUtx7OH61+I/AMrowxA=' 'sha256-9sXUVYZS0aLKYG93+xGx2y4ogMl6PGLoS+MkvbavYgY=' 'sha256-K4pV+kJGbsRCGtfqnVxb/g4mGDTW2e/oUhpj2/4w+lQ=' 'sha256-U3ObuPO93kdth3kTWF/nOWhWbwaNc9my9vASDAJNpIg=' 'sha256-LdE66qyC7fzIcEluTKZGSFLyd+Rriq9sO9bw4STKJEQ=' 'sha256-+d3JgFfxiGte7Q97XVenyYqiS7Wj7x+2xP/W7LifO0w=' 'sha256-iMXJAhftnweLI6NhUjZNnmDuJFq7FBmTdVhMSZy3H9Q=' 'sha256-UklWwaEkCvuIbRujdxeT0bOpSJBXH1u02NLvkpBfJDw=' 'sha256-qlhx50sXFkRTYjUSk7swU8SiBhL1hf+mx7MoMELDMuo=' 'sha256-xtCqyM9t6yol9mxH4PjHc0FhaQZHKpfZYdnBLsITVXI=';
         script-src-attr 'self';
         connect-src ws://localhost:1313/livereload;
+        worker-src 'none';
+        child-src 'none';
+        object-src 'none';
+        form-action 'none';
+        frame-ancestors 'self';
 
         upgrade-insecure-requests;
         base-uri 'none';
@@ -209,7 +216,7 @@ allow = ["^nvim$"]
       """
       Cross-Origin-Embedder-Policy = 'credentialless'
       Cross-Origin-Opener-Policy = 'same-origin'
-      Cross-Origin-Resource-Policy = 'same-site'
+      Cross-Origin-Resource-Policy = 'cross-origin'
       Permissions-Policy = """
         accelerometer=(),
         ambient-light-sensor=(),
@@ -257,6 +264,5 @@ allow = ["^nvim$"]
       Referrer-Policy = 'strict-origin-when-cross-origin'
       Strict-Transport-Security = 'max-age=31536000; includeSubDomains'
       X-Content-Type-Options = 'nosniff'
-      X-Frame-Options = 'DENY'
       X-Permitted-Cross-Domain-Policies = 'none'
       X-XSS-Protection = '1; mode=block'
