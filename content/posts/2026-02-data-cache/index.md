@@ -6,7 +6,7 @@ description = "Benchmarking databases to make `nps` faster and more flexible"
 author = ["Ole", "https://github.com/OleMussmann"]
 issueLink = "https://github.com/OleMussmann/ole.mn/issues"
 tags = ["DuckDB", "grep", "SQLite", "Tantivy", "nix", "NixOS"]
-draft = true
+draft = false
 
 toc = true
 autonumber = false
