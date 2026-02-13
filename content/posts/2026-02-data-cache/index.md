@@ -21,6 +21,8 @@ fediverse = "@ole@fosstodon.org"
 disable = false
 +++
 
+![An array of hard drives](pexels-cookiecutter-1148820.jpg#eager "I want this data and I want it yesterday!")
+
 This is a quest.
 A quest for the right tool for the right job, for usability and performance.
 We will torture databases, run tens of thousands of benchmarks and conjure charts, numbers, and tables. Because science. 🧑‍🔬
