@@ -16,10 +16,11 @@ find public -type f -iregex ".*\.\(jpeg\|jpg\|png\|tif\|tiff\|webp\|wav\)" -prin
 echo "### deploy blog..."
 ssh cosmo "rm -rf /tmp/blog && mkdir /tmp/blog"
 rsync -r -z ./public cosmo:/tmp/blog
+echo "### prepare sudo password for cosmo..."
 ssh -t cosmo "\
-  sudo rm -rf /var/www/ole.mn/blog/public;
-  sudo mv /tmp/blog/public /var/www/ole.mn/blog;
-  sudo chown -R nginx:nginx /var/www/ole.mn/blog;
+  sudo rm -rf /mnt/volume-1/_var_www/ole.mn/blog/public;
+  sudo mv /tmp/blog/public /mnt/volume-1/_var_www/ole.mn/blog;
+  sudo chown -R nginx:nginx /mnt/volume-1/_var_www/ole.mn/blog;
   sudo systemctl restart nginx.service"
 
 echo "### ...deploy done"
