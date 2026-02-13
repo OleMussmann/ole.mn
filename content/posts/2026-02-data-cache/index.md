@@ -24,12 +24,13 @@ disable = false
 ![An array of hard drives](pexels-cookiecutter-1148820.jpg#eager "I want this data and I want it yesterday!")
 
 This is a quest.
-A quest for the right tool for the right job, for usability and performance.
+A quest for the right tool for the right job, for usability, and performance.
 We will torture databases, run tens of thousands of benchmarks and conjure charts, numbers, and tables. Because science. 🧑‍🔬
 
 But first, some background.
 
-The patient is the package search program [`nps`](https://github.com/OleMussmann/nps/), which provides information about all the [`nix`](https://nixos.org/) package manager has to offer.
+The patient is the package search program [`nps`](https://github.com/OleMussmann/nps/), which provides information about all packages the [`nix`](https://nixos.org/) package manager has to offer.
+What's the patient's complaint?
 `nps` needs a better database and a better way to update its data.
 
 Erm, `nix`?
@@ -40,7 +41,7 @@ To top it off, it has a [gigantic library](https://repology.org/repositories/gra
 If you don't know what that means, no worries! Here's a primer.
 
 ## `nix`? What's That?
-If you know everything about it, feel free to skip to the next section ["Paper Cuts"]({{< ref "#paper-cuts" >}}). If not, hang in there for a cheesy[^pun], but apt[^pun2] explanation.
+If you know everything about `nix`, feel free to skip to the next section ["Paper Cuts"]({{< ref "#paper-cuts" >}}). If not, hang in there for a cheesy[^pun], but apt[^pun2] explanation.
 
 [^pun]: Pun intended.
 [^pun2]: Also pun intended, I'll stop now.
