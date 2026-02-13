@@ -6,6 +6,14 @@ description: "The conclusion to the account of debugging a subtle build problem 
 tags: ["Windows", "DuckDB", "MingW", "bisection", "macro-hygiene"]
 author: ["Suvayu Ali", "https://github.com/suvayu"]
 issueLink: "https://github.com/suvayu/suvayu/issues"
+
+toc: true
+autonumber: false
+readTime: true
+math: false
+showTags: true
+hideBackToTop: false
+hidePagination: true
 ---
 
 # Solving the mystery of the missing symbols!
